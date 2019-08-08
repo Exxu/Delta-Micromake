@@ -1,0 +1,21 @@
+Parametfros Automaticos
+.Height:288.69  Ex:-3.6  Ey:-0.46  Ez:+0.00  Radius:94.33
+.               Tx:-0.39  Ty:+0.28  Tz:+0.11
+
+.Height:289.08  Ex:-4.86  Ey:-0.74  Ez:+0.00  Radius:93.93
+.               Tx:-0.34  Ty:+0.06  Tz:+0.28
+
+Height:289.09  Ex:-4.85  Ey:-0.77  Ez:+0.00  Radius:94.01
+.               Tx:-0.33  Ty:+0.09  Tz:+0.24
+Save with M500 and/or copy to Configuration.h
+
+.Height:289.12  Ex:-4.05  Ey:-0.85  Ez:+0.00  Radius:95.08
+.               Tx:-0.26  Ty:-0.04  Tz:+0.30
+Z= 288.7
+
+Voltajes estandar stepers
+
+V_Extrusor=0.76
+V_Z=0.62
+V_Y=0.61
+V_X=0.66
