@@ -1,4 +1,5 @@
-﻿/**
+/**
+ * https://www.youtube.com/watch?v=YUfFw8qlKfU&t=68s﻿/**
  * Marlin 3D Printer Firmware
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
@@ -600,7 +601,7 @@
 #define XYZ_BELT_PITCH 2
 #define XYZ_PULLEY_TEETH 16
 #define XYZ_STEPS (XYZE_FULL_STEPS_PER_ROTATION * XYZ_MICROSTEPS / double(XYZ_BELT_PITCH) / double(XYZ_PULLEY_TEETH))
-#define E_MM_PER_ROTATION 19.8
+#define E_MM_PER_ROTATION 11.647
 #define E_STEPS (XYZE_FULL_STEPS_PER_ROTATION * XYZ_MICROSTEPS / double(E_MM_PER_ROTATION))
 
 /**
@@ -608,7 +609,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { XYZ_STEPS, XYZ_STEPS, XYZ_STEPS, E_STEPS }  // default steps per unit for Kossel (GT2, 20 tooth)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { XYZ_STEPS, XYZ_STEPS, XYZ_STEPS, 200 }  // default steps per unit for Kossel (GT2, 20 tooth)
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -764,7 +765,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 0     // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 0   // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 0.4  // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER 0  // Z offset: -below +above  [the nozzle]
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 1000 //4000
@@ -1472,7 +1473,7 @@
  * This may be required to resolve "volume init" errors.
  */
 //#define SPI_SPEED SPI_HALF_SPEED
-#define SPI_SPEED SPI_QUARTER_SPEED
+//#define SPI_SPEED SPI_QUARTER_SPEED
 //#define SPI_SPEED SPI_EIGHTH_SPEED
 
 /**
